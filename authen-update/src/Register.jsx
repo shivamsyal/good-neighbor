@@ -9,7 +9,6 @@ class Register extends Component {
 			first_name :  '',
       last_name :   '',
       email :       '',
-			p_num :       '',
       username :    '',
       password :    ''
 		}
@@ -27,7 +26,7 @@ class Register extends Component {
 	}
 
 	render() {
-		const { first_name, last_name, email, p_num, username, password } = this.state
+		const { first_name, last_name, email, username, password } = this.state
 		return (
 			<div className="col-md-6 col-md-offset-3">
       <h2>Register</h2>
@@ -58,16 +57,6 @@ class Register extends Component {
 							type="text"
 							name="email"
 							value={email}
-							onChange={this.changeHandler}
-							className="form-control"
-						/>
-					</div>
-					<div className="form-group">
-          <label htmlFor="p_num" >Phone Number</label>
-						<input
-							type="number"
-							name="p_num"
-							value={p_num}
 							onChange={this.changeHandler}
 							className="form-control"
 						/>
